@@ -1,0 +1,50 @@
+// stylelint-disable declaration-no-important
+// Contextual backgrounds
+@mixin bg-variant($parent, $color, $ignore-warning: false) {
+    #{$parent} {
+        background-color: $color !important;
+        p,
+        li,
+        a,
+        div,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        blockquote,
+        label,
+        path,
+        rect {
+            color: color-yiq($color);
+        }
+
+        .card-img-overlay {
+            background-color: rgba($color, 0.8);
+            @include hover-focus-active {
+                background-color: $color;
+            }
+        }
+    }
+    a#{$parent},
+    button#{$parent} {
+        @include hover-focus {
+            background-color: darken($color, 10%) !important;
+        }
+    }
+}
+
+@mixin bg-gradient-variant($parent, $color) {
+    $mix: mix($body-bg, $color, 15%);
+    #{$parent} {
+        background: $color
+            linear-gradient(
+                180deg,
+                hextohsla($mix),
+                cubic-bezier(0.645, 0.045, 0.355, 1),
+                hextohsla($color)
+            )
+            repeat-x !important;
+    }
+}

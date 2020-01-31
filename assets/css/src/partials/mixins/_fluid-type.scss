@@ -1,0 +1,119 @@
+// ========================================================================= //
+// Component: _fluid-type.scss
+// Project: amerisleep
+// Created Date: 3-14-19
+// Author: Sam Rankin (samrankin.dev@gmail.com>)
+// -----
+// Last Modified: 4-9-19 at 10:51 am
+// Modified By: Sam Rankin <samrankin.dev@gmail.com>
+// -----
+// Copyright (c) 2019 amerisleep Legal
+// -----
+// HISTORY:
+// Date      	By	Comments
+// ----------	---	----------------------------------------------------------
+// ========================================================================= //
+
+/// poly-fluid-sizing
+/// Generate linear interpolated size values through multiple break points
+/// @param $property - A string CSS property name
+/// @param $map - A SASS map of viewport unit and size value pairs
+/// @requires function linear-interpolation
+/// @requires function map-sort
+/// @example
+///   @include poly-fluid-sizing('font-size', (576px: 22px, 768px: 24px, 992px: 34px));
+/// @author Jake Wilson <jake.e.wilson@gmail.com>
+@mixin poly-fluid-sizing($properties, $map) {
+    // Get the number of provided breakpoints
+    $length: length(map-keys($map));
+
+    // Error if the number of breakpoints is < 2
+    @if ($length < 2) {
+        @error 'poly-fluid-sizing() $map requires at least values';
+    }
+
+    // Sort the map by viewport width (key)
+    $map: map-sort($map);
+    $keys: map-keys($map);
+
+    // Minimum size
+    @each $property in $properties {
+        #{$property}: map-get($map, nth($keys, 1));
+    }
+
+    // Interpolated size through breakpoints
+    @for $i from 1 through ($length - 1) {
+        @media (min-width: nth($keys,$i)) {
+            @each $property in $properties {
+                #{$property}: linear-interpolation(
+                    (
+                        nth($keys, $i): map-get($map, nth($keys, $i)),
+                        nth($keys, ($i + 1)):
+                            map-get($map, nth($keys, ($i + 1)))
+                    )
+                );
+            }
+        }
+    }
+
+    // Maxmimum size
+    @media (min-width: nth($keys,$length)) {
+        @each $property in $properties {
+            #{$property}: map-get($map, nth($keys, $length));
+        }
+    }
+}
+
+@mixin fs($multiplier-sm: 0, $multiplier-lg: 0) {
+    $font-lg: ms(
+        $v: $multiplier-lg,
+        $base: $font-size-px-lg,
+        $ratio: $theme-ratio
+    );
+    $font-sm: ms(
+        $v: $multiplier-sm,
+        $base: $font-size-px-sm,
+        $ratio: $theme-ratio
+    );
+    $sizes: (
+        $sm: $font-sm,
+        $xx: $font-lg
+    );
+    @include poly-fluid-sizing('font-size', $sizes);
+}
+
+@mixin ms-pfs(
+    $properties,
+    $multiplier-sm: 0,
+    $multiplier-lg: 0,
+    $settings-sm: $modularscale-px-sm,
+    $settings-lg: $modularscale-px-lg,
+    $bp-sm: 'sm',
+    $bp-lg: $dbp
+) {
+    $properties-sm-ms: ms(
+        $v: $multiplier-sm,
+        $settings: $settings-sm
+    );
+    $properties-lg-ms: ms(
+        $v: $multiplier-lg,
+        $settings: $settings-lg
+    );
+    $s-bpx: breakpoint-min($bp-sm);
+    $dbpx: breakpoint-min($bp-lg);
+    $pfs-map: (
+        $s-bpx: $properties-sm-ms,
+        $dbpx: $properties-lg-ms
+    );
+    @include poly-fluid-sizing($properties, $pfs-map);
+}
+
+@mixin font-family(
+    $font-family: $font-family-base,
+    $fallback: $font-family-system
+) {
+    font-family: $fallback;
+    .wf-active & {
+        font-family: quote($font-family);
+    }
+}

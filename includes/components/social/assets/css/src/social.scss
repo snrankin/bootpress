@@ -1,0 +1,49 @@
+//// ======================================================================== //
+/// @name   social
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+
+@import 'core';
+
+.social-icons {
+    .site-footer & {
+        .nav-link {
+            .nav-icon-wrapper {
+                background-color: #fff;
+            }
+
+            i {
+                color: $primary;
+            }
+        }
+    }
+    .nav-item {
+        width: auto;
+    }
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.25rem 0.5rem;
+    }
+    .nav-icon-wrapper {
+        border-radius: 100%;
+        width: 2rem;
+        background-color: $primary;
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1;
+            font-size: 1rem;
+            color: color-yiq($primary);
+        }
+    }
+}
+
+.social-profile-icon-wrapper {
+    min-width: $grid-gutter-width;
+}

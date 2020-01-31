@@ -1,0 +1,66 @@
+// stylelint-disable declaration-no-important
+
+@each $color, $value in $theme-colors {
+    @include bg-variant('.bg-#{$color}', $value);
+}
+
+@if $enable-gradients {
+    @each $color, $value in $theme-colors {
+        @include bg-gradient-variant('.bg-gradient-#{$color}', $value);
+    }
+}
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+$x-positions: (
+    'l': 'left',
+    'c': 'center',
+    'r': 'right'
+);
+$y-positions: (
+    't': 'top',
+    'c': 'center',
+    'b': 'bottom'
+);
+
+@each $x-abbrev, $x-prop in $x-positions {
+    @each $y-abbrev, $y-prop in $y-positions {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+                .bg-image#{$infix}-x#{$x-abbrev}-y#{$y-abbrev} {
+                    background-position: $x-prop $y-prop !important;
+                }
+            }
+        }
+    }
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: $transition-fade;
+}
+
+@each $color, $value in $grays {
+    @include bg-variant('.bg-gray-#{$color}', $value);
+}
+
+@each $color, $value in $social-colors {
+    @include bg-variant('.bg-#{$color}', $value);
+}

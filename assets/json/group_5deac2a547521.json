@@ -1,0 +1,2429 @@
+{
+    "key": "group_5deac2a547521",
+    "title": "Site Footer",
+    "fields": [
+        {
+            "key": "field_5deac2a554789",
+            "label": "Site Footer",
+            "name": "site_footer",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5deac2a55cc3d",
+                    "label": "Content",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5deac2a55cc95",
+                    "label": "Site Footer Content",
+                    "name": "rows",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 1,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5deac2a56dcc0",
+                            "label": "Row Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5deac2a56dd1d",
+                            "label": "Columns",
+                            "name": "columns",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 6,
+                            "layout": "block",
+                            "button_label": "Add Column",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5deac2a57f15e",
+                                    "label": "Column Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5deac2a57f1a4",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layouts": {
+                                        "layout_5ddd7de5c6786": {
+                                            "key": "layout_5ddd7de5c6786",
+                                            "name": "logo",
+                                            "label": "Logo",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d237",
+                                                    "label": "Logo Option",
+                                                    "name": "logo_option",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "default": "Default"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5ddd7dfa9b10b": {
+                                            "key": "layout_5ddd7dfa9b10b",
+                                            "name": "menu",
+                                            "label": "Menu",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d28c",
+                                                    "label": "Menu",
+                                                    "name": "menu",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "2": "Primary Navigation"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d2d0",
+                                                    "label": "ID",
+                                                    "name": "menu_id",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d310",
+                                                    "label": "Class",
+                                                    "name": "menu_class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d350",
+                                                    "label": "Divider",
+                                                    "name": "",
+                                                    "type": "message",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "divider",
+                                                        "id": ""
+                                                    },
+                                                    "message": "",
+                                                    "new_lines": "wpautop",
+                                                    "esc_html": 0
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d390",
+                                                    "label": "Container Tag",
+                                                    "name": "container",
+                                                    "type": "button_group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "div": "DIV",
+                                                        "nav": "NAV",
+                                                        "none": "NONE"
+                                                    },
+                                                    "allow_null": 0,
+                                                    "default_value": "",
+                                                    "layout": "horizontal",
+                                                    "return_format": "value"
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d3cf",
+                                                    "label": "Container ID",
+                                                    "name": "container_id",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d40e",
+                                                    "label": "Container Class",
+                                                    "name": "container_class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d455",
+                                                    "label": "Divider (copy)",
+                                                    "name": "",
+                                                    "type": "message",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "divider",
+                                                        "id": ""
+                                                    },
+                                                    "message": "",
+                                                    "new_lines": "wpautop",
+                                                    "esc_html": 0
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d490",
+                                                    "label": "Text Before Link",
+                                                    "name": "before",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-3",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "Nav Link",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d4c9",
+                                                    "label": "Text Before Link Text",
+                                                    "name": "link_before",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-3",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "Link Text",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d502",
+                                                    "label": "Text After Link Text",
+                                                    "name": "link_after",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-3",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "Link Text",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d53b",
+                                                    "label": "Text After Link",
+                                                    "name": "after",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-3",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "Nav Link",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d58c",
+                                                    "label": "Dropdown Menu",
+                                                    "name": "dropdown",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "message": "",
+                                                    "default_value": 1,
+                                                    "ui": 1,
+                                                    "ui_on_text": "",
+                                                    "ui_off_text": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5ddd7e019b10c": {
+                                            "key": "layout_5ddd7e019b10c",
+                                            "name": "widget_area",
+                                            "label": "Widget Area",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d5c6",
+                                                    "label": "Widget Area",
+                                                    "name": "widget_area",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "page": "Page Sidebar",
+                                                        "footer-1": "Footer Column 1",
+                                                        "footer-2": "Footer Column 2",
+                                                        "footer-3": "Footer Column 3",
+                                                        "footer-4": "Footer Column 4"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5ddd7e0b9b10d": {
+                                            "key": "layout_5ddd7e0b9b10d",
+                                            "name": "search",
+                                            "label": "Search",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d5ff",
+                                                    "label": "ID",
+                                                    "name": "id",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d639",
+                                                    "label": "Aria Label",
+                                                    "name": "aria_label",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d6d9",
+                                                    "label": "Class",
+                                                    "name": "class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d717",
+                                                    "label": "Divider (copy2)",
+                                                    "name": "",
+                                                    "type": "message",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "divider",
+                                                        "id": ""
+                                                    },
+                                                    "message": "",
+                                                    "new_lines": "wpautop",
+                                                    "esc_html": 0
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d789",
+                                                    "label": "Form Field Label",
+                                                    "name": "form_field_label",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "Search",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d7cb",
+                                                    "label": "Label Position",
+                                                    "name": "label_position",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "hidden": "Hidden from view",
+                                                        "above": "Above Form Field",
+                                                        "left": "To the left of the form field",
+                                                        "right": "To the right of the form field",
+                                                        "below": "Below the form field"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d83c",
+                                                    "label": "Label Class",
+                                                    "name": "label_class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": "1"
+                                        },
+                                        "layout_5ddd7e269b10e": {
+                                            "key": "layout_5ddd7e269b10e",
+                                            "name": "shortcode",
+                                            "label": "Shortcode",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d8ae",
+                                                    "label": "Shortcode",
+                                                    "name": "shortcode",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5ddd7e309b10f": {
+                                            "key": "layout_5ddd7e309b10f",
+                                            "name": "text",
+                                            "label": "Text",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59d93b",
+                                                    "label": "Text",
+                                                    "name": "text",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59d98f",
+                                                    "label": "Class",
+                                                    "name": "class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59da01",
+                                                    "label": "Wrapper Tag",
+                                                    "name": "tag",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "p": "Paragraph Tag",
+                                                        "h1": "Heading 1 Tag",
+                                                        "h2": "Heading 2 Tag",
+                                                        "h3": "Heading 3 Tag",
+                                                        "h4": "Heading 4 Tag",
+                                                        "h5": "Heading 5 Tag",
+                                                        "h6": "Heading 6 Tag",
+                                                        "div": "Div Tag",
+                                                        "span": "Span Tag",
+                                                        "a": "Link Tag"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59da72",
+                                                    "label": "Link",
+                                                    "name": "link",
+                                                    "type": "url",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_5deac2a59da01",
+                                                                "operator": "==",
+                                                                "value": "a"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5ddd7e5f9b110": {
+                                            "key": "layout_5ddd7e5f9b110",
+                                            "name": "company_info",
+                                            "label": "Company info",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a59dae3",
+                                                    "label": "Location",
+                                                    "name": "location",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "main": "Parent Company (Main Company)"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "return_format": "value",
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59db6f",
+                                                    "label": "HTML Tag",
+                                                    "name": "tag",
+                                                    "type": "button_group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "div": "div",
+                                                        "ul": "ul",
+                                                        "none": "none"
+                                                    },
+                                                    "allow_null": 0,
+                                                    "default_value": "",
+                                                    "layout": "horizontal",
+                                                    "return_format": "value"
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59dbaa",
+                                                    "label": "ID",
+                                                    "name": "id",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59dc1b",
+                                                    "label": "Class",
+                                                    "name": "class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59dc8c",
+                                                    "label": "Title",
+                                                    "name": "title",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto flex-fill",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a59dcd7",
+                                                    "label": "Info to Display",
+                                                    "name": "info_to_display",
+                                                    "type": "flexible_content",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-12",
+                                                        "id": ""
+                                                    },
+                                                    "layouts": {
+                                                        "layout_5de6c16297773": {
+                                                            "key": "layout_5de6c16297773",
+                                                            "name": "address",
+                                                            "label": "Address",
+                                                            "display": "block",
+                                                            "sub_fields": [
+                                                                {
+                                                                    "key": "field_5deac2a6d27e6",
+                                                                    "label": "ID",
+                                                                    "name": "id",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2827",
+                                                                    "label": "Class",
+                                                                    "name": "class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d289e",
+                                                                    "label": "Divider",
+                                                                    "name": "",
+                                                                    "type": "message",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "divider",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "new_lines": "wpautop",
+                                                                    "esc_html": 0
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d28e1",
+                                                                    "label": "HTML Tag",
+                                                                    "name": "tag",
+                                                                    "type": "button_group",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "choices": {
+                                                                        "address": "address",
+                                                                        "span": "span",
+                                                                        "div": "div",
+                                                                        "li": "li",
+                                                                        "none": "none"
+                                                                    },
+                                                                    "allow_null": 0,
+                                                                    "default_value": "",
+                                                                    "layout": "horizontal",
+                                                                    "return_format": "value"
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2951",
+                                                                    "label": "Add Link",
+                                                                    "name": "add_link",
+                                                                    "type": "true_false",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "default_value": 1,
+                                                                    "ui": 1,
+                                                                    "ui_on_text": "",
+                                                                    "ui_off_text": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d29c1",
+                                                                    "label": "Label",
+                                                                    "name": "title",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2a31",
+                                                                    "label": "Icon Class",
+                                                                    "name": "icon_class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                }
+                                                            ],
+                                                            "min": "",
+                                                            "max": ""
+                                                        },
+                                                        "layout_5de6c30c3b157": {
+                                                            "key": "layout_5de6c30c3b157",
+                                                            "name": "phone",
+                                                            "label": "Phone",
+                                                            "display": "block",
+                                                            "sub_fields": [
+                                                                {
+                                                                    "key": "field_5deac2a6d2aa1",
+                                                                    "label": "ID",
+                                                                    "name": "id",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2ae4",
+                                                                    "label": "Class",
+                                                                    "name": "class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2b55",
+                                                                    "label": "Divider (copy)",
+                                                                    "name": "",
+                                                                    "type": "message",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "divider",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "new_lines": "wpautop",
+                                                                    "esc_html": 0
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2bda",
+                                                                    "label": "HTML Tag",
+                                                                    "name": "tag",
+                                                                    "type": "button_group",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "choices": {
+                                                                        "div": "div",
+                                                                        "span": "span",
+                                                                        "li": "li",
+                                                                        "none": "none"
+                                                                    },
+                                                                    "allow_null": 0,
+                                                                    "default_value": "",
+                                                                    "layout": "horizontal",
+                                                                    "return_format": "value"
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2c4c",
+                                                                    "label": "Add Link",
+                                                                    "name": "add_link",
+                                                                    "type": "true_false",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "default_value": 1,
+                                                                    "ui": 1,
+                                                                    "ui_on_text": "",
+                                                                    "ui_off_text": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2c8e",
+                                                                    "label": "Label",
+                                                                    "name": "title",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2cfe",
+                                                                    "label": "Icon Class",
+                                                                    "name": "icon_class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                }
+                                                            ],
+                                                            "min": "",
+                                                            "max": ""
+                                                        },
+                                                        "layout_5de6c3653b16e": {
+                                                            "key": "layout_5de6c3653b16e",
+                                                            "name": "email",
+                                                            "label": "Email",
+                                                            "display": "block",
+                                                            "sub_fields": [
+                                                                {
+                                                                    "key": "field_5deac2a6d2d6e",
+                                                                    "label": "ID",
+                                                                    "name": "id",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2de4",
+                                                                    "label": "Class",
+                                                                    "name": "class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2e55",
+                                                                    "label": "Divider (copy2)",
+                                                                    "name": "",
+                                                                    "type": "message",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "divider",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "new_lines": "wpautop",
+                                                                    "esc_html": 0
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2e97",
+                                                                    "label": "HTML Tag",
+                                                                    "name": "tag",
+                                                                    "type": "button_group",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "choices": {
+                                                                        "div": "div",
+                                                                        "span": "span",
+                                                                        "li": "li",
+                                                                        "none": "none"
+                                                                    },
+                                                                    "allow_null": 0,
+                                                                    "default_value": "",
+                                                                    "layout": "horizontal",
+                                                                    "return_format": "value"
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2f07",
+                                                                    "label": "Add Link",
+                                                                    "name": "add_link",
+                                                                    "type": "true_false",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "default_value": 1,
+                                                                    "ui": 1,
+                                                                    "ui_on_text": "",
+                                                                    "ui_off_text": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2f77",
+                                                                    "label": "Label",
+                                                                    "name": "title",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d2fc3",
+                                                                    "label": "Icon Class",
+                                                                    "name": "icon_class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                }
+                                                            ],
+                                                            "min": "",
+                                                            "max": ""
+                                                        },
+                                                        "layout_5de6c3443b15f": {
+                                                            "key": "layout_5de6c3443b15f",
+                                                            "name": "fax",
+                                                            "label": "Fax",
+                                                            "display": "block",
+                                                            "sub_fields": [
+                                                                {
+                                                                    "key": "field_5deac2a6d3033",
+                                                                    "label": "ID",
+                                                                    "name": "id",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d30a3",
+                                                                    "label": "Class",
+                                                                    "name": "class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d3113",
+                                                                    "label": "Divider (copy3)",
+                                                                    "name": "",
+                                                                    "type": "message",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "divider",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "new_lines": "wpautop",
+                                                                    "esc_html": 0
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d3183",
+                                                                    "label": "HTML Tag",
+                                                                    "name": "tag",
+                                                                    "type": "button_group",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "choices": {
+                                                                        "div": "div",
+                                                                        "span": "span",
+                                                                        "li": "li",
+                                                                        "none": "none"
+                                                                    },
+                                                                    "allow_null": 0,
+                                                                    "default_value": "",
+                                                                    "layout": "horizontal",
+                                                                    "return_format": "value"
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d31c4",
+                                                                    "label": "Label",
+                                                                    "name": "title",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d323c",
+                                                                    "label": "Icon Class",
+                                                                    "name": "icon_class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                }
+                                                            ],
+                                                            "min": "",
+                                                            "max": ""
+                                                        },
+                                                        "layout_5de6c3553b167": {
+                                                            "key": "layout_5de6c3553b167",
+                                                            "name": "hob",
+                                                            "label": "Business Hours",
+                                                            "display": "block",
+                                                            "sub_fields": [
+                                                                {
+                                                                    "key": "field_5deac2a6d32ae",
+                                                                    "label": "ID",
+                                                                    "name": "id",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d331e",
+                                                                    "label": "Class",
+                                                                    "name": "class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill ",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d338f",
+                                                                    "label": "Divider (copy4)",
+                                                                    "name": "",
+                                                                    "type": "message",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "divider",
+                                                                        "id": ""
+                                                                    },
+                                                                    "message": "",
+                                                                    "new_lines": "wpautop",
+                                                                    "esc_html": 0
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d33d3",
+                                                                    "label": "HTML Tag",
+                                                                    "name": "tag",
+                                                                    "type": "button_group",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto",
+                                                                        "id": ""
+                                                                    },
+                                                                    "choices": {
+                                                                        "div": "div",
+                                                                        "span": "span",
+                                                                        "li": "li",
+                                                                        "none": "none"
+                                                                    },
+                                                                    "allow_null": 0,
+                                                                    "default_value": "",
+                                                                    "layout": "horizontal",
+                                                                    "return_format": "value"
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d3443",
+                                                                    "label": "Label",
+                                                                    "name": "title",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                },
+                                                                {
+                                                                    "key": "field_5deac2a6d34b3",
+                                                                    "label": "Icon Class",
+                                                                    "name": "icon_class",
+                                                                    "type": "text",
+                                                                    "instructions": "",
+                                                                    "required": 0,
+                                                                    "conditional_logic": 0,
+                                                                    "wrapper": {
+                                                                        "width": "",
+                                                                        "class": "col-ml-auto flex-fill",
+                                                                        "id": ""
+                                                                    },
+                                                                    "default_value": "",
+                                                                    "placeholder": "",
+                                                                    "prepend": "",
+                                                                    "append": "",
+                                                                    "maxlength": ""
+                                                                }
+                                                            ],
+                                                            "min": "",
+                                                            "max": ""
+                                                        }
+                                                    },
+                                                    "button_label": "Add Item",
+                                                    "min": "",
+                                                    "max": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5de6bc2e06723": {
+                                            "key": "layout_5de6bc2e06723",
+                                            "name": "social",
+                                            "label": "Social Icons",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a81866a",
+                                                    "label": "Location",
+                                                    "name": "location",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "main": "Parent Company (Main Company)"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 0,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8212b5",
+                                                    "label": "Wrapper ID",
+                                                    "name": "id",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a829dda",
+                                                    "label": "Wrapper Class",
+                                                    "name": "class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a832b1e",
+                                                    "label": "Wrapper Tag",
+                                                    "name": "tag",
+                                                    "type": "button_group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "ul": "UL",
+                                                        "div": "DIV",
+                                                        "none": "NONE"
+                                                    },
+                                                    "allow_null": 0,
+                                                    "default_value": "",
+                                                    "layout": "horizontal",
+                                                    "return_format": "value"
+                                                },
+                                                {
+                                                    "key": "field_5deac2a83b1c1",
+                                                    "label": "Item Tag",
+                                                    "name": "item_tag",
+                                                    "type": "button_group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "li": "LI",
+                                                        "div": "DIV",
+                                                        "span": "SPAN",
+                                                        "none": "NONE"
+                                                    },
+                                                    "allow_null": 0,
+                                                    "default_value": "",
+                                                    "layout": "horizontal",
+                                                    "return_format": "value"
+                                                },
+                                                {
+                                                    "key": "field_5deac2a844a06",
+                                                    "label": "Item Class",
+                                                    "name": "item_class",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a84d157",
+                                                    "label": "Display Social Profile Title",
+                                                    "name": "display_title",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "message": "",
+                                                    "default_value": 0,
+                                                    "ui": 1,
+                                                    "ui_on_text": "",
+                                                    "ui_off_text": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        }
+                                    },
+                                    "button_label": "Add Content Block",
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "field_5deac2a85e834",
+                                    "label": "Column Styles",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5deac2a867067",
+                                    "label": "Styles",
+                                    "name": "styles",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5deac2a86fa8e",
+                                            "label": "ID",
+                                            "name": "id",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "col-ml-auto",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5deac2a86face",
+                                            "label": "Extra Classes",
+                                            "name": "class",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "col-ml-auto flex-fill",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5deac2a86fb0a",
+                                            "label": "Additional HTML Data Tags",
+                                            "name": "html_data",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "col-12",
+                                                "id": ""
+                                            },
+                                            "collapsed": "field_5de6af5bcc120",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "",
+                                            "button_label": "Add Data",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a889928",
+                                                    "label": "Label",
+                                                    "name": "label",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-lg-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a88996c",
+                                                    "label": "Value",
+                                                    "name": "value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-lg-auto",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "key": "field_5deac2a8a39d9",
+                                            "label": "Width",
+                                            "name": "width",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "col-12",
+                                                "id": ""
+                                            },
+                                            "layout": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5deac2a8ac7a5",
+                                                    "label": "XS Screen",
+                                                    "name": "xs",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size less than 320px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac7e5",
+                                                    "label": "SM Screen",
+                                                    "name": "sm",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size 320px-576px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac821",
+                                                    "label": "MS Screen",
+                                                    "name": "ms",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size 577px-768px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac85e",
+                                                    "label": "MD Screen",
+                                                    "name": "md",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size 769px-1024px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac89b",
+                                                    "label": "ML Screen",
+                                                    "name": "ml",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size 1025px-1280px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac8d8",
+                                                    "label": "LG Screen",
+                                                    "name": "lg",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size 1281px-1440px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                },
+                                                {
+                                                    "key": "field_5deac2a8ac913",
+                                                    "label": "XL Screen",
+                                                    "name": "xl",
+                                                    "type": "select",
+                                                    "instructions": "Screen Size larger than 1440px",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "col-ml-auto",
+                                                        "id": ""
+                                                    },
+                                                    "choices": {
+                                                        "12": "12\/12 Columns or Full Width",
+                                                        "11": "11\/12 Columns",
+                                                        "10": "10\/12 Columns or 5\/6",
+                                                        "9": "9\/12 Columns or 3\/4",
+                                                        "8": "8\/12 Columns or 2\/3",
+                                                        "7": "7\/12 Columns",
+                                                        "6": "6\/12 Columns or 1\/2",
+                                                        "5": "5\/12 Columns",
+                                                        "4": "4\/12 Columns or 1\/3",
+                                                        "3": "3\/12 Columns or 1\/4",
+                                                        "2": "2\/12 Columns or 1\/6",
+                                                        "1": "1\/12 Columns",
+                                                        "auto": "Automatic width based on column content"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_null": 1,
+                                                    "multiple": 0,
+                                                    "ui": 0,
+                                                    "return_format": "value",
+                                                    "ajax": 0,
+                                                    "placeholder": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5deac2a91f81f",
+                            "label": "Row Styles",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5deac2a928078",
+                            "label": "Styles",
+                            "name": "styles",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5deac2a93099b",
+                                    "label": "ID",
+                                    "name": "id",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "col-lg-auto",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5deac2a9309dc",
+                                    "label": "Extra Classes",
+                                    "name": "class",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "col-lg-auto flex-fill",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5deac2a930a18",
+                                    "label": "Main Navigation Row",
+                                    "name": "main_navigation_row",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "col-lg-auto",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5deac2a930a53",
+                                    "label": "Additional HTML Data Tags",
+                                    "name": "html_data",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "col-12",
+                                        "id": ""
+                                    },
+                                    "collapsed": "field_5de6af5bcc120",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "Add Data",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5deac2a953adf",
+                                            "label": "Label",
+                                            "name": "label",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5deac2a953b27",
+                                            "label": "Value",
+                                            "name": "value",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5deac2a97da48",
+                    "label": "Site Footer Style",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5deac2a9865c0",
+                    "label": "Styles",
+                    "name": "styles",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5deac2a98f011",
+                            "label": "ID",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "col-lg-auto",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5deac2a98f053",
+                            "label": "Extra Classes",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "col-lg-auto flex-fill",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5deac2a98f090",
+                            "label": "Additional HTML Data Tags",
+                            "name": "html_data",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "col-12",
+                                "id": ""
+                            },
+                            "collapsed": "field_5de6af5bcc120",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Data",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5deac2a9a9d60",
+                                    "label": "Label",
+                                    "name": "label",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5deac2a9a9da5",
+                                    "label": "Value",
+                                    "name": "value",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1575666405
+}

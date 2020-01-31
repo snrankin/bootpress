@@ -1,0 +1,323 @@
+{
+    "displayName": "BootPress",
+    "name": "bootpress",
+    "version": "1.0.0",
+    "description": "Custom Wordpress theme based on Bootstrap 4 and advanced custom fields",
+    "main": "index.js",
+    "scripts": {
+        "test": "bootpress test"
+    },
+    "keywords": [
+        "wordpress",
+        "bootstrap4",
+        "acf",
+        "responsive",
+        "underscores",
+        "gulp"
+    ],
+    "author": {
+        "name": "Sam Rankin",
+        "email": "samrankin.dev@gmail.com"
+    },
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/snrankin/bootpress.git"
+    },
+    "homepage": "https://github.com/snrankin/bootpress#readme",
+    "bugs": {
+        "url": "https://github.com/snrankin/bootpress/issues",
+        "email": "samrankin.dev@gmail.com"
+    },
+    "env": "dev",
+    "urls": {
+        "dev": "https://bootpress.dev",
+        "stage": "",
+        "prod": ""
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.3",
+        "bootstrap": "^4.4.1",
+        "browser-sync": "latest",
+        "gulp": "latest",
+        "gulp-babel": "^8.0.0-beta.2",
+        "gulp-beautify": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-concat-multi": "latest",
+        "gulp-debug": "latest",
+        "gulp-filenames": "^4.0.1",
+        "gulp-filter": "latest",
+        "gulp-if": "latest",
+        "gulp-imagemin": "latest",
+        "gulp-inline-fonts": "latest",
+        "gulp-jshint": "latest",
+        "gulp-json-to-sass": "latest",
+        "gulp-line-ending-corrector": "latest",
+        "gulp-modernizr-build": "latest",
+        "gulp-newer": "^1.4.0",
+        "gulp-newy": "latest",
+        "gulp-notify": "latest",
+        "gulp-plumber": "latest",
+        "gulp-postcss": "latest",
+        "gulp-rename": "latest",
+        "gulp-sass": "latest",
+        "gulp-sourcemaps": "latest",
+        "gulp-tap": "^2.0.0",
+        "gulp-uglify": "latest",
+        "gulp-watch": "latest",
+        "jshint-stylish": "^2.2.1",
+        "lazypipe": "latest",
+        "merge-stream": "latest"
+    },
+    "dependencies": {
+        "ansi-colors": "latest",
+        "autoprefixer": "latest",
+        "core-js": "^3.6.4",
+        "fancy-log": "latest",
+        "jshint": "latest",
+        "lodash": "latest",
+        "postcss-aspect-ratio-mini": "latest",
+        "postcss-assets": "latest",
+        "postcss-critical-css": "latest",
+        "postcss-easing-gradients": "latest",
+        "postcss-easings": "latest",
+        "postcss-filter-gradient": "latest",
+        "postcss-fixes": "latest",
+        "postcss-font-magician": "latest",
+        "postcss-inline-svg": "latest",
+        "postcss-letter-tracking": "latest",
+        "postcss-momentum-scrolling": "latest",
+        "postcss-sort-media-queries": "latest",
+        "sass-glob-importer": "latest",
+        "through2": "latest",
+        "vinyl": "latest"
+    },
+    "browserslist": "> 0.25%, not dead",
+    "globalNode": "/usr/local/lib/node_modules/",
+    "modernizr": {
+        "options": [
+            "setClasses",
+            "addTest",
+            "atRule",
+            "domPrefixes",
+            "hasEvent",
+            "html5shiv",
+            "html5printshiv",
+            "load",
+            "mq",
+            "prefixed",
+            "prefixes",
+            "prefixedCSS",
+            "setClasses",
+            "testAllProps",
+            "testProp",
+            "testStyles"
+        ],
+        "uglify": false
+    },
+    "babelConfig": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "useBuiltIns": "usage",
+                    "corejs": {
+                        "version": 3,
+                        "proposals": true
+                    }
+                }
+            ]
+        ],
+        "comments": false
+    },
+    "jshintConfig": {
+        "maxerr": 50,
+        "bitwise": true,
+        "camelcase": false,
+        "curly": true,
+        "eqeqeq": false,
+        "forin": true,
+        "freeze": true,
+        "immed": false,
+        "latedef": false,
+        "newcap": false,
+        "noarg": true,
+        "noempty": true,
+        "nonbsp": true,
+        "nonew": false,
+        "plusplus": false,
+        "quotmark": false,
+        "undef": true,
+        "unused": true,
+        "strict": false,
+        "maxparams": false,
+        "maxdepth": false,
+        "maxstatements": false,
+        "maxcomplexity": false,
+        "maxlen": false,
+        "varstmt": false,
+        "asi": false,
+        "boss": false,
+        "debug": false,
+        "eqnull": true,
+        "esversion": 10,
+        "moz": false,
+        "evil": false,
+        "expr": false,
+        "funcscope": false,
+        "globalstrict": false,
+        "iterator": false,
+        "lastsemic": false,
+        "laxbreak": false,
+        "laxcomma": false,
+        "loopfunc": false,
+        "multistr": false,
+        "noyield": false,
+        "notypeof": false,
+        "proto": false,
+        "scripturl": false,
+        "shadow": false,
+        "sub": false,
+        "supernew": false,
+        "validthis": false,
+        "browser": true,
+        "browserify": false,
+        "couch": false,
+        "devel": true,
+        "dojo": false,
+        "jasmine": false,
+        "jquery": true,
+        "mocha": false,
+        "mootools": false,
+        "node": false,
+        "nonstandard": true,
+        "phantom": false,
+        "prototypejs": false,
+        "qunit": false,
+        "rhino": false,
+        "shelljs": false,
+        "typed": false,
+        "worker": false,
+        "wsh": false,
+        "yui": false,
+        "globals": {
+            "google": true,
+            "select2": true,
+            "bsCustomFileInput": true,
+            "makeFullHeight": true,
+            "sameHeight": true,
+            "verge": true
+        }
+    },
+    "beautifyJSOpts": {
+        "indent_size": 4,
+        "indent_char": " ",
+        "max_preserve_newlines": "-1",
+        "preserve_newlines": false,
+        "keep_array_indentation": true,
+        "break_chained_methods": false,
+        "indent_scripts": "normal",
+        "brace_style": "collapse",
+        "space_before_conditional": true,
+        "unescape_strings": false,
+        "jslint_happy": true,
+        "end_with_newline": false,
+        "wrap_line_length": 0,
+        "indent_inner_html": false,
+        "comma_first": false,
+        "e4x": false,
+        "indent_empty_lines": true
+    },
+    "paths": {
+        "fonts": "./assets/fonts",
+        "admin": "./includes/admin",
+        "components": "./includes/components",
+        "build": {
+            "styles": "./assets/css/src",
+            "scripts": "./assets/js/src",
+            "images": "./assets/imgs/src"
+        },
+        "dist": {
+            "styles": "./assets/css",
+            "scripts": "./assets/js",
+            "images": "./assets/imgs"
+        }
+    },
+    "inputFiles": {
+        "sass": {
+            "main": "./assets/css/src/**/*.scss",
+            "components": "./includes/components/**/assets/css/src/**/*.scss",
+            "admin": "./includes/admin/assets/css/src/**/*.scss"
+        },
+        "js": {
+            "main": "./assets/js/src/*.js",
+            "components": "./includes/components/**/assets/js/src/*.js",
+            "admin": "./includes/admin/assets/js/src/admin.js",
+            "vendor": {
+                "bootstrap.js": "bootstrap/dist/js/bootstrap.bundle.min.js",
+                "file-input.js": "bs-custom-file-input/dist/bs-custom-file-input.min.js",
+                "verge.js": "verge/verge.min.js",
+                "lazy-sizes.js": [
+                    "lazysizes/lazysizes.min.js",
+                    "lazysizes/plugins/aspectratio/ls.aspectratio.min.js",
+                    "lazysizes/plugins/bgset/ls.bgset.min.js",
+                    "lazysizes/plugins/blur-up/ls.blur-up.min.js",
+                    "lazysizes/plugins/object-fit/ls.object-fit.min.js",
+                    "lazysizes/plugins/parent-fit/ls.parent-fit.min.js",
+                    "lazysizes/plugins/progressive/ls.progressive.min.js",
+                    "lazysizes/plugins/video-embed/ls.video-embed.min.js",
+                    "lazysizes/plugins/unload/ls.unload.min.js"
+                ],
+                "select-2.js": "select2/dist/js/select2.js"
+            }
+        },
+        "images": [
+            "./**/imgs/**/*"
+        ],
+        "fonts": [
+            {
+                "name": "Font Awesome 5 Brands",
+                "file": "/@fortawesome/fontawesome-pro/webfonts/fa-brands-400.*",
+                "weight": "400",
+                "style": "normal",
+                "display": "swap",
+                "formats": [
+                    "eot",
+                    "woff2",
+                    "woff",
+                    "ttf",
+                    "svg"
+                ]
+            },
+            {
+                "name": "Font Awesome 5 Pro",
+                "file": "/@fortawesome/fontawesome-pro/webfonts/fa-solid-900.*",
+                "weight": "900",
+                "style": "normal",
+                "display": "swap",
+                "formats": [
+                    "eot",
+                    "woff2",
+                    "woff",
+                    "ttf",
+                    "svg"
+                ]
+            },
+            {
+                "name": "Font Awesome 5 Pro",
+                "file": "/@fortawesome/fontawesome-pro/webfonts/fa-light-300.*",
+                "weight": "300",
+                "style": "normal",
+                "display": "swap",
+                "formats": [
+                    "eot",
+                    "woff2",
+                    "woff",
+                    "ttf",
+                    "svg"
+                ]
+            }
+        ]
+    }
+}

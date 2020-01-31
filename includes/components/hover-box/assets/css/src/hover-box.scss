@@ -1,0 +1,379 @@
+//// ======================================================================== //
+/// @name   hover-box
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+@import 'core';
+@import 'bootstrap/scss/buttons';
+$hover-box-transition: $transition-base;
+$hover-box-padding: $grid-gutter-width;
+$hover-box-color: $component-active-color;
+$hover-box-icon-size: ms(3);
+$hover-box-bg-color: $component-active-bg;
+$hover-box-border-color: $border-color;
+$hover-box-border-width: $border-width;
+$hover-box-border: solid $hover-box-border-width $hover-box-border-color;
+
+.hover-box {
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    .hover-box-image {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        transition: $hover-box-transition;
+    }
+
+    .hover-box-content-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: $hover-box-transition;
+        padding: $hover-box-padding;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .hover-box-content-wrapper-inner {
+        color: $hover-box-color;
+        flex: 1 1 100%;
+        backface-visibility: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &::before,
+        &::after {
+            pointer-events: none;
+            transition: $hover-box-transition;
+        }
+    }
+
+    .hover-box-title {
+        color: $hover-box-color;
+        transition: $hover-box-transition;
+    }
+    .hover-box-content {
+        position: relative;
+        width: 100%;
+        transition: $hover-box-transition;
+    }
+    .hover-box-text {
+        color: $hover-box-color;
+        transition: $hover-box-transition;
+    }
+    .hover-box-link {
+        cursor: pointer;
+    }
+    &.effect-lily {
+        .hover-box-image {
+            width: calc(100% + 50px);
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            transform: translate3d(-2rem, 0, 0);
+        }
+        .hover-box-content-wrapper-inner {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .hover-box-title-wrapper {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            transform: translate3d(0, 1.5rem, 0);
+            transition: transform 0.35s;
+        }
+        .hover-box-icon {
+            margin-bottom: 0;
+        }
+        .hover-box-title {
+            text-align: left;
+        }
+        .hover-box-text {
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.35s;
+            min-height: 1.5rem;
+            transform: translate3d(0, 1.5rem, 0);
+        }
+        @include hover-focus-active {
+            .hover-box-title-wrapper {
+                transform: translateY(0) !important;
+            }
+            .hover-box-image {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+            .hover-box-text {
+                opacity: 1;
+                transform: translateY(0) !important;
+                transition-delay: 0.05s;
+                transition-duration: 0.35s;
+            }
+        }
+    }
+    &.effect-sadie {
+        .hover-box-content-wrapper {
+            &::before {
+                background: linear-gradient(
+                    to bottom,
+                    rgba($hover-box-bg-color, 0) 0%,
+                    rgba($hover-box-bg-color, 0.8) 75%
+                );
+                content: '';
+                opacity: 0;
+                transform: translate3d(0, 50%, 0);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.35s, transform 0.35s;
+            }
+        }
+        .hover-box-content {
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hover-box-icon {
+            display: block;
+        }
+        .hover-box-title {
+            text-align: center;
+            color: $hover-box-bg-color;
+            transition: transform 0.35s, color 0.35s;
+            margin-bottom: 0;
+        }
+        .hover-box-text {
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.35s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            transform: translate3d(0, 1rem, 0);
+            width: 100%;
+        }
+        @include hover-focus-active {
+            .hover-box-content-wrapper {
+                &::before {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                }
+            }
+            .hover-box-title {
+                color: #fff;
+                transform: translate3d(0, -2rem, 0);
+            }
+            .hover-box-text {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+    }
+    &.effect-roxy {
+        .hover-box-content-wrapper {
+            &::before {
+                content: '';
+                opacity: 0;
+                position: absolute;
+                top: $hover-box-padding;
+                right: $hover-box-padding;
+                bottom: $hover-box-padding;
+                left: $hover-box-padding;
+                border: $hover-box-border;
+                transform: translate3d(-1rem, 0, 0);
+            }
+        }
+        .hover-box-content {
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        .hover-box-image {
+            width: calc(100% + 2rem);
+            transition: opacity 0.35s, transform 0.35s;
+            transform: translate3d(-2rem, 0, 0);
+            top: 0;
+            left: 0;
+        }
+        .hover-box-icon {
+            display: block;
+        }
+        .hover-box-title {
+            text-align: left;
+            color: $hover-box-bg-color;
+            transition: transform 0.35s, color 0.35s;
+            margin-bottom: 0;
+        }
+        .hover-box-text {
+            opacity: 0;
+            transition: opacity 0.35s, transform 0.35s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            transform: translate3d(-1rem, 0, 0);
+            width: 100%;
+        }
+        @include hover-focus-active {
+            .hover-box-image {
+                transform: translate3d(0, 0, 0);
+                opacity: 0.7;
+            }
+            .hover-box-content-wrapper {
+                &::before {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                }
+            }
+            .hover-box-text {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+    }
+    &.effect-bubba {
+        .hover-box-image {
+            opacity: 0.3;
+        }
+        .hover-box-content-wrapper {
+            background-color: rgba($hover-box-bg-color, 0.9);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .hover-box-content-wrapper-inner {
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: $grid-gutter-width;
+                left: $grid-gutter-width;
+                right: $grid-gutter-width;
+                bottom: $grid-gutter-width;
+                opacity: 0;
+            }
+
+            &::before {
+                border-top: 1px solid $hover-box-border-color;
+                border-bottom: 1px solid $hover-box-border-color;
+                transform: scale(0, 1);
+            }
+
+            &::after {
+                border-right: 1px solid $hover-box-border-color;
+                border-left: 1px solid $hover-box-border-color;
+                transform: scale(1, 0);
+            }
+        }
+        .hover-box-title-wrapper {
+            padding: 0 $hover-box-padding;
+        }
+        .hover-box-icon {
+            text-align: center;
+        }
+        .hover-box-title {
+            text-align: center;
+        }
+
+        .hover-box-text {
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            text-align: center;
+            transform: translate3d(-50%, 1rem, 0);
+            padding: #{$hover-box-padding / 2} $hover-box-padding 0;
+            width: 100%;
+        }
+        @include hover-focus-active {
+            .hover-box-image {
+                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+
+            .hover-box-content-wrapper-inner {
+                &::before,
+                &::after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .hover-box-content-wrapper {
+                background-color: rgba($secondary, 0.65);
+            }
+
+            .hover-box-text {
+                opacity: 1;
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+    }
+    &.effect-sarah {
+        @include hover-focus-active {
+            .hover-box-image {
+                opacity: 0.4;
+                transform: translate3d(0, 0, 0);
+            }
+            .hover-box-title-wrapper::after {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+            .hover-box-text {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .hover-box-image {
+            max-width: none;
+            width: calc(100% + #{$hover-box-padding});
+            transform: translate3d(#{$hover-box-padding/2}, 0, 0);
+            backface-visibility: hidden;
+        }
+        .hover-box-title-wrapper {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: $hover-box-padding/2;
+            &::after {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: $border-width;
+                background: #fff;
+                opacity: 0;
+                content: '';
+                transition: $hover-box-transition;
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+        .hover-box-text {
+            text-align: left;
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+            padding-top: $hover-box-padding/2;
+        }
+    }
+}

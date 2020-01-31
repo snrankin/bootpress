@@ -1,0 +1,40 @@
+/// ========================================================================= //
+/// FontAwesome css only, fonts are loaded seperately
+/// @group BootPress
+/// @since v5.11.2
+/// -----
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// -----
+/// Created Date:  11-12-19
+/// Modified Date: 11-12-19 at 11:05 am
+/// Modified By:   Sam Rankin <samrankin.dev@gmail.com>
+/// -----
+/// HISTORY:
+/// Date    	By	Comments
+/// --------	--	--------------------------------------------------------------
+/// ========================================================================= //
+
+@import '@fortawesome/fontawesome-pro/scss/fontawesome.scss';
+
+.fa,
+.fal,
+.far,
+.fas {
+    @include icon('Font Awesome 5 Pro');
+}
+
+.fal {
+    &::before {
+        font-weight: 300 !important;
+    }
+}
+
+.fas {
+    &::before {
+        font-weight: 900 !important;
+    }
+}
+
+.fab {
+    @include icon('Font Awesome 5 Brands');
+}

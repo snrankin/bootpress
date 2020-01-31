@@ -1,0 +1,22 @@
+{
+    "ignorePath": "/Users/sam/Library/Mobile Documents/com~apple~CloudDocs/Web Development/configs/.stylelintignore",
+    "extends": [
+        "/usr/local/lib/node_modules/stylelint-config-standard",
+        "/usr/local/lib/node_modules/stylelint-config-prettier"
+    ],
+    "rules": {
+        "prettier/prettier": true,
+        "indentation": 4,
+        "string-quotes": "single",
+        "no-descending-specificity": null,
+        "property-no-unknown": null,
+        "at-rule-no-unknown": null,
+        "unicode-bom": "never",
+        "comment-empty-line-before": [
+            "always",
+            {
+                "ignore": ["stylelint-commands", "after-comment"]
+            }
+        ]
+    }
+}

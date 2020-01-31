@@ -1,0 +1,80 @@
+//// ======================================================================== //
+/// @name   _icon
+/// @group  K&P Attorney
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// -----
+/// Created : 12/12/19
+/// Modified: 12/18/19 by SR
+/// ======================================================================= ////
+
+@mixin icon($icon-font-family) {
+    .wf-active & {
+        // Icons are hidden until the font-family is loaded
+        &::before {
+            opacity: 1;
+            font-family: quote($icon-font-family) !important;
+        }
+    }
+    &::before {
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-decoration: inherit;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        line-height: 1;
+        display: block;
+        opacity: 0;
+        transition: $transition-base;
+
+        /* Enable Ligatures ================ */
+        letter-spacing: 0;
+        -webkit-font-feature-settings: 'liga';
+        -moz-font-feature-settings: 'liga=1';
+        -moz-font-feature-settings: 'liga';
+        -ms-font-feature-settings: 'liga' 1;
+        font-feature-settings: 'liga';
+        -webkit-font-variant-ligatures: discretionary-ligatures;
+        font-variant-ligatures: discretionary-ligatures;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smoothing: antialiased;
+    }
+}
+
+@mixin icon-content($icon, $font-family: 'Font Awesome 5 Pro') {
+    content: icon($icon);
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    display: block;
+    opacity: 0;
+    transition: $transition-base;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga=1';
+    -moz-font-feature-settings: 'liga';
+    -ms-font-feature-settings: 'liga' 1;
+    font-feature-settings: 'liga';
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    .wf-active & {
+        opacity: 1;
+        font-family: quote($font-family) !important;
+    }
+}

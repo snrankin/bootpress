@@ -1,0 +1,231 @@
+{
+    "key": "group_5ddd83f5ec64c",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_5ddd83fb1a676",
+            "label": "Logo Variations",
+            "name": "logo_variations",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5ddd840d1a677",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Logo",
+            "sub_fields": [
+                {
+                    "key": "field_5ddd840d1a677",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ddd84201a678",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg,png,jpg"
+                }
+            ]
+        },
+        {
+            "key": "field_5ddd84651a679",
+            "label": "Breakpoints",
+            "name": "breakpoints",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_5ddd84921a67b",
+                    "label": "SM",
+                    "name": "sm",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 320,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 280,
+                    "max": 576,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ddd84d71a67d",
+                    "label": "MS",
+                    "name": "ms",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 576,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 320,
+                    "max": 768,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ddd84f61a67e",
+                    "label": "MD",
+                    "name": "md",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 768,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 576,
+                    "max": 1024,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ddd850b1a67f",
+                    "label": "ML",
+                    "name": "ml",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1024,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 768,
+                    "max": 1280,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ddd85251a680",
+                    "label": "LG",
+                    "name": "lg",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1280,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 1024,
+                    "max": 1440,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ddd853d1a681",
+                    "label": "XL",
+                    "name": "xl",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1440,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 1280,
+                    "max": "",
+                    "step": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1574798767
+}

@@ -1,0 +1,228 @@
+body#tinymce {
+    margin: 0; // 1
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left; // 3
+    background-color: $body-bg;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        margin-bottom: ms(2);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h1,
+    .h1 {
+        font-size: $h1-font-size;
+    }
+
+    h2,
+    .h2 {
+        font-weight: $font-weight-light;
+        font-size: $h2-font-size;
+        small,
+        .small {
+            font-weight: $headings-font-weight;
+        }
+    }
+
+    h3,
+    .h3 {
+        font-weight: $font-weight-bold;
+        font-size: $h3-font-size;
+        font-family: $font-family-base;
+    }
+
+    h4,
+    .h4 {
+        font-size: $h4-font-size;
+    }
+
+    h5,
+    .h5 {
+        font-family: $font-family-base;
+        font-weight: $font-weight-bold;
+        font-size: $h5-font-size;
+        small,
+        .small {
+            font-weight: $headings-font-weight;
+        }
+    }
+
+    h6,
+    .h6 {
+        font-family: $font-family-base;
+        font-weight: $font-weight-bold;
+        font-size: $h6-font-size;
+        letter-tracking: 200;
+        small,
+        .small {
+            font-weight: $font-weight-normal;
+        }
+    }
+
+    .lead {
+        font-size: $lead-font-size;
+        font-weight: $lead-font-weight;
+    }
+
+    // Type display classes
+    .display-1 {
+        @extend h1 !optional;
+
+        font-size: $display1-size;
+    }
+
+    .display-2 {
+        @extend h2 !optional;
+
+        font-size: $display2-size;
+    }
+
+    .display-3 {
+        @extend h3 !optional;
+
+        font-size: $display3-size;
+    }
+
+    .display-4 {
+        @extend h6 !optional;
+
+        font-size: $display4-size;
+    }
+
+    //
+    // Horizontal rules
+    //
+
+    hr {
+        margin-top: $hr-margin-y;
+        margin-bottom: $hr-margin-y;
+        border: 0;
+        border-top: $hr-border-width solid $hr-border-color;
+    }
+
+    //
+    // Emphasis
+    //
+
+    small,
+    .small {
+        font-size: $small-font-size;
+        font-weight: $font-weight-normal;
+    }
+
+    .large {
+        font-size: 1.5em;
+        font-weight: $headings-font-weight;
+    }
+
+    mark,
+    .mark {
+        padding-left: $mark-padding;
+        padding-right: $mark-padding;
+        background-color: $mark-bg;
+        color: color-yiq($mark-bg);
+    }
+
+    //
+    // Lists
+    //
+
+    .list-unstyled {
+        @include list-unstyled;
+    }
+
+    // Inline turns list items into inline-block
+    .list-inline {
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: -#{$list-inline-padding};
+        margin-bottom: -#{$list-inline-padding};
+    }
+
+    .list-inline-item {
+        padding: 0;
+        margin-right: #{$list-inline-padding};
+        margin-bottom: #{$list-inline-padding};
+    }
+
+    //
+    // Misc
+    //
+
+    // Builds on `abbr`
+    .initialism {
+        @include font-size(90%);
+
+        text-transform: uppercase;
+    }
+
+    // Blockquotes
+    .blockquote {
+        margin-bottom: $spacer;
+        @include font-size($blockquote-font-size);
+    }
+
+    .blockquote-footer {
+        font-weight: $font-weight-bold;
+        font-size: $small-font-size;
+        color: $blockquote-small-color;
+        display: block;
+
+        &::before {
+            content: '\2014\00A0'; // em dash, nbsp
+        }
+    }
+    .text-white,
+    .text-light {
+        background-color: $gray-700;
+    }
+}
+
+#poststuff {
+    .wpb_vc_param_value.content,
+    .wpb_vc_column_text,
+    .wpb_vc_message,
+    .wpb_vc_toggle {
+        > .wpb_element_wrapper > .wpb_vc_param_value.textarea_html {
+            @extend body#tinymce;
+        }
+    }
+    .vc_properties-list textarea,
+    .wp-editor-area {
+        font-family: $font-family-monospace !important;
+        letter-spacing: 0 !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
+}
+.vc_properties-list textarea,
+.wp-editor-area {
+    font-family: $font-family-monospace !important;
+    letter-spacing: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}

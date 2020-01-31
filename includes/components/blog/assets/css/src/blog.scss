@@ -1,0 +1,15 @@
+//// ======================================================================== //
+/// @name   blog
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+
+@import 'core';
+
+.user-avatar {
+    .user-icon {
+        padding: $grid-gutter-width;
+        font-size: ms(4);
+    }
+}
