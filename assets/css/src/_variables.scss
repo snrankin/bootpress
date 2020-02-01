@@ -3,9 +3,6 @@
 /// @group  BootPress
 /// @since  1.0.0
 /// @author Sam Rankin <samrankin.dev@gmail.com>
-/// -----
-/// Created : 03/13/19
-/// Modified: 01/12/20 by SR
 /// ======================================================================= ////
 
 @import 'bootstrap/scss/variables';
@@ -41,6 +38,12 @@ $theme-colors: map-merge((
     'tertiary'  : $tertiary,
 ), $theme-colors );
 
+$primary:       $cyan;
+$secondary:     $gray-700;
+$success:       $teal;
+$info:          $blue;
+$warning:       $orange;
+
 $social-colors: (
     'facebook'  : #3c5a99,
     'instagram' : #e1306c,
@@ -51,17 +54,10 @@ $social-colors: (
     'youtube'   : #f00
 );
 
-// Set a specific jump point for requesting color jumps
-$theme-color-interval:      10%;
-
-// The yiq lightness value that determines when the lightness of color changes
-//from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold:  150;
-
 // Customize the light and dark text colors for use in our YIQ color contrast
 //function.
-$yiq-text-dark  : $black;
-$yiq-text-light : $white;
+$yiq-text-dark  : $dark;
+$yiq-text-light : $light;
 
 // Disabled Colors
 $bg-disabled   : $gray-200;
@@ -74,9 +70,9 @@ $text-disabled : $gray-600;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret                               : true;
-$enable-rounded                             : true;
+$enable-rounded                             : false;
 $enable-shadows                             : true;
-$enable-gradients                           : true;
+$enable-gradients                           : false;
 $enable-transitions                         : true;
 $enable-prefers-reduced-motion-media-query  : true;
 // Deprecated, no longer affects any compiled CSS
@@ -167,14 +163,14 @@ $font-sizes: (
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-// $container-max-widths: (
-//     xs: 100vw,
-//     ms: 95vw,
-//     md: 90vw,
-//     ml: 85vw,
-//     lg: 80vw,
-//     xl: 75vw
-// );
+$container-max-widths: (
+    xs: 100vw,
+    ms: 95vw,
+    md: 90vw,
+    ml: 85vw,
+    lg: 80vw,
+    xl: 75vw
+);
 
 // !SECTION: Grid containers
 
@@ -238,7 +234,7 @@ $font-family-system     : system, -apple-system, system-ui, BlinkMacSystemFont, 
 $font-family-sans-serif : Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-serif      : 'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif;
 $font-family-monospace  : Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', SFMono-Regular, Menlo, Monaco, 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-$font-family-base       : $font-family-system;
+$font-family-base       : $font-family-primary, sans-serif;
 
 // !SECTION: Font Families
 

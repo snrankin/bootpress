@@ -1,0 +1,16 @@
+//// ======================================================================== //
+/// @name   _font-family
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+
+@mixin font-family(
+    $font-family: $font-family-base,
+    $fallback: $font-family-system
+) {
+    font-family: $fallback;
+    .wf-active & {
+        font-family: quote($font-family);
+    }
+}

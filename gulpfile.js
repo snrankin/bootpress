@@ -690,7 +690,7 @@
     // --------------------------- SECTION: Tasks --------------------------- //
 
         function watchFiles() {
-            watch(theme, jsonThemetoSass);
+            watch('./theme-config.json', jsonThemetoSass);
             watch(mainSassFiles, mainStyles);
             watch(adminSassFiles, adminStyles);
             watch(mainJSFiles, mainScripts);

@@ -10,8 +10,7 @@ function asyncFonts()
             {
                 google: {
                     families: [
-                        \'Playfair Display:400,400i,700\',
-                        \'Work Sans:400,500,800\'
+                        \'Poppins:200,400,400i,700\'
                     ]
                 },
                 custom: {

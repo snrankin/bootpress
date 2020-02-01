@@ -26,7 +26,7 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <a class="skip-link sr-only" href="#content"><?php esc_html_e('Skip to content', 'bootpress'); ?></a>
+        <?php do_action('bp_hook_top'); ?>
         <div id="wrapper" class="site">
             <?php getComponent('header', 'header-site'); ?>
             <div id="content" class="site-content flex-fill">

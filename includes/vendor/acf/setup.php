@@ -1,21 +1,11 @@
 <?php
 
 /** ============================================================================
- * Description
+ * ACF Fields Pro setup and custom functions
  * @package BootPress
- * @version <<version>>
- * -----
- * @author Sam Rankin <samrankin.dev@gmail.com>
- * @copyright Copyright (c) 2019 Your Company
- * -----
- * Created Date:  11-9-19
- * Last Modified: 11-9-19 at 6:31 pm
- * Modified By:   Sam Rankin <samrankin.dev@gmail.com>
- * -----
- * HISTORY:
- * Date        By    Comments
- * --------    --    --------------------------------------------------------------
- * =========================================================================== */
+ * @version 1.0.0
+ * @author  Sam Rankin <samrankin.dev@gmail.com>
+ * ========================================================================== */
 
 define('ACF_PATH', VENDOR_PATH . '/acf/');
 define('ACF_PATH_URI', VENDOR_PATH_URI . '/acf/');
@@ -23,8 +13,6 @@ define('ACF_PATH_URI', VENDOR_PATH_URI . '/acf/');
 if (!class_exists('ACF')) {
     include_once 'acf.php';
 }
-
-
 
 function newACFPath($url)
 {
@@ -41,7 +29,7 @@ function combineThemeOptions()
                 $field_values[$field_name] = $value;
             }
         }
-        update_option('bp_theme_options', $field_values, true);
+        update_option(THEME_SLUG . '_options', $field_values, true);
     }
 }
 

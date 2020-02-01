@@ -21,4 +21,4 @@ function themeStyles()
         wp_enqueue_style($name);
     }
 };
-add_action('wp_footer', 'themeStyles', 9999);
+add_action('get_footer', 'themeStyles', 9999);

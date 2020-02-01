@@ -1,7 +1,7 @@
 <?php
 
 /** ============================================================================
- * setup
+ * Core Setup
  * @package BootPress
  * @version 1.0.0
  * @author  Sam Rankin <samrankin.dev@gmail.com>
