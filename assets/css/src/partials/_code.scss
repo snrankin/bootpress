@@ -1,0 +1,16 @@
+//// ======================================================================== //
+/// @name   _code
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+
+@import 'bootstrap/scss/code';
+
+// Inline code
+code {
+    display: inline-block;
+    background-color: $kbd-bg;
+    padding: $kbd-padding-y $kbd-padding-x;
+    @include border-radius($badge-border-radius);
+}

@@ -23,50 +23,49 @@
 // 3. Correct the line height in all browsers.
 // 4. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
 // 5. Change the default tap highlight to be completely transparent in iOS.
-@critical {
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box; // 1
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; // 1
+}
+
+html {
+    font-family: sans-serif; // 2
+    line-height: 1.15; // 3
+    -webkit-text-size-adjust: 100%; // 4
+    -webkit-tap-highlight-color: rgba($black, 0); // 5
+    -ms-overflow-style: scrollbar; // 5
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-smoothing: antialiased;
+    @include poly-fluid-sizing('font-size', $font-sizes);
+}
+
+// Body
+//
+// 1. Remove the margin in all browsers.
+// 2. As a best practice, apply a default `background-color`.
+// 3. Set an explicit initial text-align value so that we can later use
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+    @include font-family;
+    @include font-size($font-size-base);
+
+    margin: 0; // 1
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left; // 3
+    background-color: $body-bg; // 2
+    &.admin-bar {
+        position: static;
     }
+}
 
-    html {
-        font-family: $font-family-system; // 2
-        line-height: 1.15; // 3
-        -webkit-text-size-adjust: 100%; // 4
-        -webkit-tap-highlight-color: rgba($black, 0); // 5
-        -ms-overflow-style: scrollbar; // 5
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility !important;
-        -webkit-font-smoothing: antialiased !important;
-        font-smoothing: antialiased;
-        @include poly-fluid-sizing('font-size', $font-sizes);
-    }
-
-    // Body
-    //
-    // 1. Remove the margin in all browsers.
-    // 2. As a best practice, apply a default `background-color`.
-    // 3. Set an explicit initial text-align value so that we can later use
-    //    the `inherit` value on things like `<th>` elements.
-
-    body {
-        @include font-family;
-        @include font-size($font-size-base);
-
-        margin: 0; // 1
-        font-weight: $font-weight-base;
-        line-height: $line-height-base;
-        color: $body-color;
-        text-align: left; // 3
-        background-color: $body-bg; // 2
-        &.admin-bar {
-            position: static;
-        }
-    }
-
-    ::selection {
-        background: $primary;
-        color: color-yiq($primary);
-    }
+::selection {
+    background: $primary;
+    color: color-yiq($primary);
 }

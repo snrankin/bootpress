@@ -185,20 +185,20 @@
     }
 }
 
+// ========================== Bootstrap Grid system ========================= //
+//
+// Generate semantic grid columns with these mixins.
+
 @mixin make-container($gutter: $grid-gutter-width) {
     width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
     margin-right: auto;
     margin-left: auto;
-
-    &::before,
-    &::after {
-        display: none;
-    }
-
-    &.no-gutters {
-        padding: 0 !important;
+    margin-bottom: $gutter;
+    &:last-child,
+    &:only-child {
+        margin-bottom: $gutter;
     }
 }
 
@@ -209,24 +209,17 @@
 ) {
     @each $breakpoint, $container-max-width in $max-widths {
         @include media-breakpoint-up($breakpoint, $breakpoints) {
-            max-width: $container-max-width !important;
+            max-width: $container-max-width;
         }
     }
 }
 
 @mixin make-row($gutter: $grid-gutter-width) {
-    width: calc(100% + #{$gutter});
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-right: -$gutter / 2;
     margin-left: -$gutter / 2;
     margin-bottom: -$gutter;
-
-    &::before,
-    &::after {
-        display: none;
-    }
 }
 
 @mixin make-col-ready($gutter: $grid-gutter-width) {
@@ -240,7 +233,18 @@
     margin-bottom: $gutter;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+}
+
+@mixin make-col-content($gutter: $grid-gutter-width) {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -$gutter;
+}
+
+@mixin make-col-item($gutter: $grid-gutter-width) {
+    display: block;
+    margin-bottom: $gutter;
 }
 
 @mixin make-col($size, $columns: $grid-columns) {
@@ -251,8 +255,26 @@
     max-width: percentage($size / $columns);
 }
 
+@mixin make-col-auto() {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; // Reset earlier grid tiers
+}
+
 @mixin make-col-offset($size, $columns: $grid-columns) {
     $num: $size / $columns;
 
-    margin-left: if($num==0, 0, percentage($num));
+    margin-left: if($num == 0, 0, percentage($num));
+}
+
+// Row columns
+//
+// Specify on a parent element(e.g., .row) to force immediate children into NN
+// numberof columns. Supports wrapping to new lines, but does not do a Masonry
+// style grid.
+@mixin row-cols($count) {
+    & > * {
+        flex: 0 0 100% / $count;
+        max-width: 100% / $count;
+    }
 }

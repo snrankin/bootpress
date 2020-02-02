@@ -13,6 +13,6 @@
 
 function skipLink()
 {
-    echo '<a class="skip-link sr-only" href="#content">' . esc_html('Skip to content', THEME_SLUG) . '</a>';
+    echo '<a class="skip-link sr-only sr-only-focusable" href="#content">' . esc_html('Skip to content', THEME_SLUG) . '</a>';
 }
 add_action('bp_hook_top', 'skipLink', 999);

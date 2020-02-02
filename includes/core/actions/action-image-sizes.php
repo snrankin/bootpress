@@ -37,4 +37,4 @@ function themeImageSizes()
     return $sizes;
 }
 // Initialized as late as possible to prevent plugins from adding sizes
-add_action('init', 'removeExtraImageSizes', 999);
+add_action('init', 'themeImageSizes', 999);

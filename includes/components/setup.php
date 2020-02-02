@@ -64,6 +64,7 @@ $components = array(
     'search',
     'sidebar',
     'social',
+    'style-guide'
 );
 foreach ($components as $component) {
     incComponent($component);

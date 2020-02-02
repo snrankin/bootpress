@@ -1,33 +1,62 @@
-// Container widths
+//// ======================================================================== //
+/// @name   _grid
+/// @group  BootPress
+/// @since  1.0.0
+/// @author Sam Rankin <samrankin.dev@gmail.com>
+/// ======================================================================= ////
+
+// ============================ Container widths ============================ //
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
 @if $enable-grid-classes {
     // Single container class with breakpoint max-widths
-    .bp_container {
+    .container {
         @include make-container();
-        @include make-container-max-widths();
+        @if $use-viewport-max-widths {
+            @include make-container-max-widths($container-vw-max-widths);
+        } @else {
+            @include make-container-max-widths();
+        }
     }
 
     // 100% wide container at all breakpoints
-    .bp_container-fluid {
+    .container-fluid {
         @include make-container();
     }
 
     // Responsive containers that are 100% wide until a breakpoint
     @each $breakpoint, $container-max-width in $container-max-widths {
-        .bp_container-#{$breakpoint} {
+        .container-#{$breakpoint} {
             @extend .container-fluid;
+        }
+
+        @if $use-viewport-max-widths == false {
+            @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+                %responsive-container-#{$breakpoint} {
+                    max-width: $container-max-width;
+                }
+
+                @each $name, $width in $grid-breakpoints {
+                    @if (
+                        $container-max-width > $width or $breakpoint == $name
+                    ) {
+                        .container#{breakpoint-infix($name, $grid-breakpoints)} {
+                            @extend %responsive-container-#{$breakpoint};
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-// Row
+// =================================== Row ================================== //
 //
 // Rows contain your columns.
 
 @if $enable-grid-classes {
-    .bp_row {
+    .row {
         @include make-row();
     }
 
@@ -45,10 +74,37 @@
     }
 }
 
-// Columns
+// ================================= Columns ================================ //
 //
 // Common styles for small and large grid columns
 
 @if $enable-grid-classes {
-    @include make-grid-columns();
+    @include make-grid-columns;
+    .bp_col {
+        @include make-col-ready;
+    }
+}
+
+// --- Generating classes for 1/5 --- //
+@include row-cols(5);
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @include media-breakpoint-up($breakpoint) {
+        @for $i from 1 through 4 {
+            .col#{$infix}-#{100/5*$i} {
+                @include make-col($i, 5);
+            }
+        }
+    }
+}
+
+// =============================== Grid Items =============================== //
+
+@if $enable-grid-classes {
+    .content-wrapper {
+        @include make-col-content;
+    }
+    .content-item {
+        @include make-col-item;
+    }
 }

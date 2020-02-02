@@ -5,14 +5,14 @@
 /// @author Sam Rankin <samrankin.dev@gmail.com>
 /// ======================================================================= ////
 
-@import 'core';
+@import 'partials/core';
 
 @import 'bootstrap/scss/root';
 @import 'partials/reboot';
 @import 'bootstrap/scss/type';
 @import 'bootstrap/scss/images';
-@import 'bootstrap/scss/code';
-// @import 'bootstrap/scss/grid';
+@import 'partials/code';
+@import 'partials/grid';
 @import 'bootstrap/scss/tables';
 @import 'bootstrap/scss/forms';
 @import 'bootstrap/scss/buttons';
@@ -39,5 +39,5 @@
 @import 'bootstrap/scss/popover';
 @import 'bootstrap/scss/carousel';
 @import 'bootstrap/scss/spinners';
-@import 'bootstrap/scss/utilities';
+@import 'partials/utilities';
 @import 'bootstrap/scss/print';

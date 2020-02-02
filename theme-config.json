@@ -1,5 +1,4 @@
 {
-    "tertiary": "$orange",
     "font-size-px-sm": "15px",
     "font-size-px-lg": "20px",
     "bp-sm": "320",
@@ -23,7 +22,12 @@
     "red": "#d94b40",
     "orange": "#fc7237",
     "yellow": "#febe37",
-    "green": "#1bd3b9",
     "teal": "#107c8e",
-    "cyan": "#41ffba"
+    "cyan": "#41ffba",
+    "primary": "$cyan",
+    "secondary": "$teal",
+    "tertiary": "#6610f2",
+    "info": "$tertiary",
+    "link-color": "$secondary",
+    "code-color": "#FFF"
 }

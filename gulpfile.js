@@ -440,10 +440,9 @@
             .pipe(
                 jsonToSass({
                     jsonPath: './theme-config.json',
-                    scssPath: stylesBuildPath + '/_theme.scss'
+                    scssPath: stylesBuildPath + '/partials/_theme.scss'
                 })
-            )
-            .pipe(dest(stylesBuildPath));
+            );
         }
 
 
