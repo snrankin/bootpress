@@ -1,24 +1,25 @@
-# Your Favicon Package
+# Bootpress Theme
 
-This package was generated with [RealFaviconGenerator](https://realfavicongenerator.net/) [v0.16](https://realfavicongenerator.net/change_log#v0.16)
+A resuable theme for Wordpress with [Bootstrap 4](https://getbootstrap.com/) and [Advanced Custom Fields](https://www.advancedcustomfields.com/) integration.
 
-## Install instructions
+### Prerequisites
 
-To install this package:
+[NodeJS](https://nodejs.org/en/)
 
-Extract this package in <code>&lt;web site&gt;/assets/imgs/</code>. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com/assets/imgs/favicon.ico</code>.
+## Built With
 
-Insert the following code in the `head` section of your pages:
+-   [Node SASS](https://github.com/sass/node-sass)
+-   [Babel](https://babeljs.io/setup)
+-   [Gulp 4](https://gulpjs.com/docs/en/getting-started/quick-start)
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon-16x16.png">
-    <link rel="manifest" href="assets/imgs/site.webmanifest">
-    <link rel="mask-icon" href="assets/imgs/safari-pinned-tab.svg" color="#3d3254">
-    <link rel="shortcut icon" href="assets/imgs/favicon.ico">
-    <meta name="msapplication-TileColor" content="#3d3254">
-    <meta name="msapplication-TileImage" content="assets/imgs/mstile-144x144.png">
-    <meta name="msapplication-config" content="assets/imgs/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+## Authors
 
-*Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
+-   **underscores** - _Base Wordpress theme files_ - [\_s](https://underscores.me/)
+
+## License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+-   Uses `wp-bootstrap-navwalker` class from [WP Bootstrap](https://wp-bootstrap.org/)

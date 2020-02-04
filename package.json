@@ -1,7 +1,7 @@
 {
     "displayName": "BootPress",
     "name": "bootpress",
-    "version": "1.0.0",
+    "version": "0.8.0",
     "description": "Custom Wordpress theme based on Bootstrap 4 and advanced custom fields",
     "main": "index.js",
     "scripts": {
